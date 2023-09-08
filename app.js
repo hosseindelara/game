@@ -9,9 +9,10 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/city", require("./src/city"));
+app.use("/game", require("./src/game"));
+app.use("/roles", require("./src/roles"));
 
-const PORT = 3000;
+const PORT = 5000;
 
 app.listen(PORT, () =>
     console.log(
